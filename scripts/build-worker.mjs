@@ -24,7 +24,6 @@ execFileSync("tar", [
   "eslint.config.js",
   ".env.example",
   ".gitignore",
-  ".openai/hosting.json",
   "README.md",
 ]);
 import { build } from "esbuild";
