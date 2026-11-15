@@ -84,8 +84,7 @@ await build({
   minify: true,
 });
 fs.rmSync("worker/assets.generated.mjs");
-fs.mkdirSync("dist/.openai", { recursive: true });
-fs.copyFileSync(".openai/hosting.json", "dist/.openai/hosting.json");
+
 console.log(
   "Worker built with",
   Object.keys(assets).length,
