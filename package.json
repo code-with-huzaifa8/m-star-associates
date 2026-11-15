@@ -1,0 +1,40 @@
+{
+  "name": "mstar-associates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build && node scripts/build-worker.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/*.test.mjs",
+    "db:generate": "drizzle-kit generate",
+    "lint": "eslint .",
+    "format": "prettier --write src worker/index.mjs worker/validation.mjs scripts tests db *.ts *.json eslint.config.js",
+    "test:e2e": "playwright test --config playwright.config.mjs"
+  },
+  "dependencies": {
+    "drizzle-orm": "^0.45.2",
+    "gsap": "^3.14.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "three": "^0.187.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.187.0",
+    "@vitejs/plugin-react": "^5.1.0",
+    "drizzle-kit": "^0.31.10",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.39.5",
+    "prettier": "^3.10.1",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^7.2.0"
+  }
+}

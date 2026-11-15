@@ -1,0 +1,14 @@
+node_modules/
+dist/
+work/
+.env*
+!.env.example
+.dev.vars*
+.wrangler/
+outputs/
+.openai/
+CINEMATIC-REVIEW.md
+DELIVERY.md
+EXPORT-SETUP.md
+HOMEPAGE-REVIEW.md
+TYPOGRAPHY-UPDATE.md
