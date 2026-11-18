@@ -16,13 +16,16 @@ export const defaultContacts = {
   whatsapp: "923112824467",
   whatsapp2: "923355818818",
   facebook: "https://www.facebook.com/profile.php?id=61596531896362",
-  instagram: "",
-  youtube: "",
+  instagram: "https://www.instagram.com/mstarassociates/",
+  youtube: "https://www.youtube.com/@mstar-associates",
   tiktok: "",
 };
 export const contactConfig = (config: any) => ({
   ...defaultContacts,
   ...config,
+  // Keep the public links active even if an older API config contains empty values.
+  instagram: config?.instagram || defaultContacts.instagram,
+  youtube: config?.youtube || defaultContacts.youtube,
 });
 export const digits = (s: string) => String(s).replace(/\D/g, "");
 function TikTok({ size = 18 }: any) {

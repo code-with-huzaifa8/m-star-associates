@@ -871,8 +871,8 @@ export function Admin({ brand }: Props) {
                         "Facebook",
                         "https://www.facebook.com/profile.php?id=61596531896362",
                       ],
-                      ["instagram", "Instagram (not yet created)", ""],
-                      ["youtube", "YouTube (not yet created)", ""],
+                      ["instagram", "Instagram", "https://www.instagram.com/mstarassociates/"],
+                      ["youtube", "YouTube", "https://www.youtube.com/@mstar-associates"],
                       ["tiktok", "TikTok (not yet created)", ""],
                     ].map(([key, label, fallback]) => (
                       <FormField key={key} label={label}>
