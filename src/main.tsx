@@ -603,16 +603,6 @@ function Home({ listings, cardProps }: any) {
               Explore in 3D <ArrowUpRight size={17} />
             </button>
           </div>
-          <div className="film-photo-credit">
-            Architectural inspiration ·{" "}
-            <a
-              href="https://unsplash.com/@cesarimagestate"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Cesar Cid / Unsplash
-            </a>
-          </div>
         </section>
       </div>
       <section className="search-section wrap" aria-label="Find a property">
